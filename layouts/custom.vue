@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav>カスタムレイアウト</nav>
+    <nav>カスタムメニュー</nav>
     <slot />
   </div>
 </template>
