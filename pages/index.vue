@@ -1,11 +1,12 @@
 <script setup lang="ts">
-const enableCustomLayout = () => {
-  setPageLayout('custom')
-}
+const { count, inc, dec } = useCounter(5)
 </script>
+
 <template>
   <div>
-    <button @click="enableCustomLayout">Update layout</button>
     <h1>Main Page</h1>
+    <button @click="() => inc()">+</button>
+    <button @click="() => dec()">-</button>
+    <div>{{ count }}</div>
   </div>
 </template>
