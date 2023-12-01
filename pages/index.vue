@@ -1,5 +1,14 @@
 <template>
-  <div class="bg-red-400">Test</div>
+  <MainLayout>
+    <div
+      id="IndexPage"
+      class="mt-4 max-w-[1200px] mx-auto px-2"
+    >
+      Index Page
+    </div>
+  </MainLayout>
 </template>
 
-<script setup></script>
+<script setup lang="ts">
+import MainLayout from '~/layouts/MainLayout.vue'
+</script>

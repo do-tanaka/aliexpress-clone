@@ -1,14 +1,24 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ['nuxt-icon', 'nuxt-lodash', '@nuxtjs/tailwindcss', '@pinia/nuxt'],
+  modules: [
+    'nuxt-icon',
+    'nuxt-lodash',
+    '@nuxtjs/tailwindcss',
+    '@pinia/nuxt',
+  ],
   runtimeConfig: {
     public: {
       stripePk: process.env.STRIPE_PK_KEY,
     },
     app: {
       head: {
-        script: [{ src: 'https://js.stripe.com/v3/', defer: true }],
+        script: [
+          {
+            src: 'https://js.stripe.com/v3/',
+            defer: true,
+          },
+        ],
       },
     },
   },
